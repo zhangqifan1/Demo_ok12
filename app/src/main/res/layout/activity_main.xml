@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <xyz.hanks.library.bang.SmallBangView
+            android:id="@+id/like_heart"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="56dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/heart_selector" />
+        </xyz.hanks.library.bang.SmallBangView>
+
+        <xyz.hanks.library.bang.SmallBangView
+            android:id="@+id/like_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="156dp"
+            app:circle_end_color="#ffbc00"
+            app:circle_start_color="#fa9651"
+            app:dots_primary_color="#fa9651"
+            app:dots_secondary_color="#ffbc00">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="hanks"
+                android:textColor="@color/text_selector"
+                android:textSize="14sp" />
+        </xyz.hanks.library.bang.SmallBangView>
+
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@android:color/darker_gray"
+            android:id="@+id/po_image2"
+            app:btn_color="@android:color/darker_gray"
+            app:btn_fill_color="@android:color/holo_green_dark"
+            app:allow_random_color="false"
+            app:siShape="@raw/smile"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navgview"
+        android:background="#f0ff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <xyz.hanks.library.bang.SmallBangView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="56dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/heart_selector" />
+        </xyz.hanks.library.bang.SmallBangView>
+
+        <xyz.hanks.library.bang.SmallBangView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="156dp"
+            app:circle_end_color="#ffbc00"
+            app:circle_start_color="#fa9651"
+            app:dots_primary_color="#fa9651"
+            app:dots_secondary_color="#ffbc00">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="hanks"
+                android:textColor="@color/text_selector"
+                android:textSize="14sp" />
+        </xyz.hanks.library.bang.SmallBangView>
+
+
+
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
